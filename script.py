@@ -29,11 +29,11 @@ if not df.empty:
 
         print("First row date:", first_row.Date)
 
-        # This code is used to read data from column 12 to the second last column
+        # This code is used to read data from column 12 to the second last column.
         search_columns = first_row.index[11:-1]
         print("search_columns:", search_columns)
 
-        # Collect all product quantities and their respective columns
+        # Collect all product quantities and their respective columns.
         product_quantities = []
         for column in search_columns:
             value = first_row[column]
